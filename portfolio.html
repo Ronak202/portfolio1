@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My Portfolio</title>
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        header h1 {
+            margin-bottom: 10px;
+        }
+        header nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        header nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        header nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        section {
+            padding: 40px;
+            margin: 20px 0;
+        }
+        section h2 {
+            margin-bottom: 20px;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+        }
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-top: 20px;
+        }
+        ul {
+            list-style: none;
+        }
+        ul li {
+            margin: 5px 0;
+        }
+        .project {
+            margin-bottom: 20px;
+        }
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .contact-form button {
+            background-color: #333;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .contact-form button:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Ronak Singh</h1>
+        <p>Your go-to developer for innovative solutions</p>
+        <nav>
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>Hi, I'm Ronak Singh, a passionate software developer with a knack for problem-solving. I enjoy building full-stack applications and working with cutting-edge technologies to create user-friendly, efficient solutions. When I'm not coding, you can find me exploring new tech trends or hiking in the mountains.</p>
+            <img src="https://via.placeholder.com/150" alt="Ronak Singh" class="profile-img">
+        </div>
+    </section>
+
+    <section id="skills">
+        <div class="container">
+            <h2>Skills</h2>
+            <h3>Technical Skills</h3>
+            <ul>
+                <li>HTML, CSS, JavaScript</li>
+                <li>React, Node.js</li>
+                <li>Python, Django</li>
+                <li>MySQL, MongoDB</li>
+                <li>Git, Docker</li>
+            </ul>
+            <h3>Soft Skills</h3>
+            <ul>
+                <li>Problem Solving</li>
+                <li>Communication</li>
+                <li>Teamwork</li>
+                <li>Adaptability</li>
+                <li>Time Management</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="project">
+                <h3>Project 1: Portfolio Website</h3>
+                <p>A personal portfolio website showcasing my skills, projects, and experience.</p>
+                <a href="https://github.com/RonakSingh/portfolio" target="_blank">View Project</a>
+            </div>
+            <div class="project">
+                <h3>Project 2: Energy Trading</h3>
+                <p>The goal is to develop a software program that manages energy trading transactions in a smart grid environment using C.</p>
+                <a href="https://github.com/Ronak202/Energy_Transaction_Database" target="_blank">View Project</a>
+            </div>
+            <div class="project">
+                <h3>Project 3: 8bit Binary Calculator</h3>
+                <p>A 8 bit binary calulator which perform arithemtic operation like addition ,subtraction,multiplication and division on 8bit binary no.</p>
+                <a href="https://github.com/Ronak202/arithmetic-_biniary_calculator" target="_blank">View Project</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>Contact</h2>
+            <p>If you'd like to get in touch, feel free to reach out via the form below or connect with me on social media.</p>
+            <p>Email: sronak2823@gmail.com</p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/ronak-singh-b10737323/" target="_blank"><linkedin class="com">
+            <in>
+            <ronak-singh></ronak-singh></a></p>
+            
+            <form class="contact-form" action="#" method="POST">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Your Name" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Your Email" required>
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message" placeholder="Your Message" rows="4" required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <script>
+        // Optional JavaScript functionality, e.g., form validation or dynamic interactions
+        document.querySelector('.contact-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Your message has been sent!');
+        });
+    </script>
+</body>
+</html>
